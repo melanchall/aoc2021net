@@ -55,7 +55,7 @@ namespace Aoc2021Net.Days
                     b.Rows[y]--;
                     b.Columns[x]--;
 
-                    if (b.Rows.Any(r => r == 0) || b.Columns.Any(c => c == 0))
+                    if (b.Rows.Contains(0) || b.Columns.Contains(0))
                     {
                         boardsWin[b.Index] = true;
                         if (waitFirstWin || boardsWin.All(_ => _))

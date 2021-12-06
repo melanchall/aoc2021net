@@ -21,10 +21,10 @@ namespace Aoc2021Net.Days
                              Y2 = match.GetInt32Group(4)
                          }).ToArray();
 
-            IEnumerable<int> GetCoordinateValues(int first, int second)
+            IEnumerable<int> GetCoordinateValues(int from, int to)
             {
-                var step = Math.Sign(second - first);
-                return Enumerable.Range(0, Math.Abs(second - first) + 1).Select(i => first + i * step);
+                var step = Math.Sign(to - from);
+                return Enumerable.Range(0, Math.Abs(to - from) + 1).Select(i => from + i * step);
             }
 
             var points = new List<(int X, int Y)>();
