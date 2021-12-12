@@ -1,6 +1,4 @@
-﻿using Aoc2021Net.Utilities;
-
-namespace Aoc2021Net.Days
+﻿namespace Aoc2021Net.Days
 {
     internal sealed class Day9 : Day
     {
@@ -40,20 +38,7 @@ namespace Aoc2021Net.Days
 
         private DayInputData GetInputData()
         {
-            var lines = InputData.GetInputLines();
-
-            var width = lines[0].Length;
-            var height = lines.Length;
-
-            var gridWidth = width + 2;
-            var gridHeight = height + 2;
-            var grid = new int[gridWidth, gridHeight];
-
-            void ForEachCoordinate(int width, int height, Action<(int X, int Y)> action) =>
-                DataProvider.GetGridCoordinates(width, height).ToList().ForEach(action);
-
-            ForEachCoordinate(gridWidth, gridHeight, p => grid[p.X, p.Y] = int.MaxValue);
-            ForEachCoordinate(width, height, p => grid[p.X + 1, p.Y + 1] = int.Parse(lines[p.Y][p.X].ToString()));
+            var (grid, width, height) = InputData.GetInputInt32GridWithMargin(int.MaxValue);
 
             var lowPoints = new List<Point>();
 
