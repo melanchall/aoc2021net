@@ -17,3 +17,4 @@
 |[Day 9: Smoke Basin](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day9.cs)|:star::star:|
 |[Day 10: Syntax Scoring](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day10.cs)|:star::star:|
 |[Day 11: Dumbo Octopus](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day11.cs)|:star::star:|
+|[Day 12: Passage Pathing](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day12.cs)|:star::star:|
