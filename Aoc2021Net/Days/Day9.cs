@@ -38,7 +38,7 @@
 
         private DayInputData GetInputData()
         {
-            var (grid, width, height) = InputData.GetInputInt32GridWithMargin(int.MaxValue);
+            var (grid, width, height) = InputData.GetInputInt32Grid(1, int.MaxValue);
 
             var lowPoints = new List<Point>();
 

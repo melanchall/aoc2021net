@@ -7,11 +7,11 @@ namespace Aoc2021Net.Days
     {
         private record ElementCount(char Element, long Count);
 
-        public override object SolvePart1() => Get(10);
+        public override object SolvePart1() => CalculateDelta(10);
 
-        public override object SolvePart2() => Get(40);
+        public override object SolvePart2() => CalculateDelta(40);
 
-        private long Get(int steps)
+        private long CalculateDelta(int steps)
         {
             var lines = InputData.GetInputLines(true);
 

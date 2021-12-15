@@ -12,7 +12,7 @@ namespace Aoc2021Net.Days
 
         private int CountFlashesAfterStepOrStepsForSyncronizedFlash(int maxSteps)
         {
-            var (grid, width, height) = InputData.GetInputInt32GridWithMargin(-int.MaxValue);
+            var (grid, width, height) = InputData.GetInputInt32Grid(1, -int.MaxValue);
 
             const int minValueToFlash = 10;
             const int valueAfterFlash = 0;

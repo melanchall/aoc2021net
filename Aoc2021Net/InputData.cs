@@ -33,22 +33,22 @@ namespace Aoc2021Net
             .Select(long.Parse)
             .ToArray();
 
-        public (int[,] Grid, int Width, int Height) GetInputInt32GridWithMargin(int fillValue)
+        public (int[,] Grid, int Width, int Height) GetInputInt32Grid(int margin, int fillValue)
         {
             var lines = GetInputLines();
 
             var width = lines[0].Length;
             var height = lines.Length;
 
-            var gridWidth = width + 2;
-            var gridHeight = height + 2;
+            var gridWidth = width + margin * 2;
+            var gridHeight = height + margin * 2;
             var grid = new int[gridWidth, gridHeight];
 
             void ForEachCoordinate(int width, int height, Action<(int X, int Y)> action) =>
                 DataProvider.GetGridCoordinates(width, height).ToList().ForEach(action);
 
             ForEachCoordinate(gridWidth, gridHeight, p => grid[p.X, p.Y] = fillValue);
-            ForEachCoordinate(width, height, p => grid[p.X + 1, p.Y + 1] = int.Parse(lines[p.Y][p.X].ToString()));
+            ForEachCoordinate(width, height, p => grid[p.X + margin, p.Y + margin] = int.Parse(lines[p.Y][p.X].ToString()));
 
             return (grid, width, height);
         }
