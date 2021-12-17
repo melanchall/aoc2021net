@@ -22,3 +22,4 @@
 |[Day 14: Extended Polymerization](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day14.cs)|:star::star:|
 |[Day 15: Chiton](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day15.cs)|:star::star:|
 |[Day 16: Packet Decoder](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day16.cs)|:star::star:|
+|[Day 17: Trick Shot](https://github.com/melanchall/aoc2021net/blob/main/Aoc2021Net/Days/Day17.cs)|:star::star:|
