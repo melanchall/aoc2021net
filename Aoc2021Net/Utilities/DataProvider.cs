@@ -15,6 +15,17 @@ namespace Aoc2021Net.Utilities
             }
         }
 
+        public static IEnumerable<(int I, int J)> GetFullIndicesPairs(int minIndex, int maxIndex)
+        {
+            for (var i = minIndex; i <= maxIndex; i++)
+            {
+                for (var j = minIndex; j <= maxIndex; j++)
+                {
+                    yield return (i, j);
+                }
+            }
+        }
+
         public static IEnumerable<(int X, int Y)> GetGridCoordinates(int width, int height)
         {
             for (var x = 0; x < width; x++)
